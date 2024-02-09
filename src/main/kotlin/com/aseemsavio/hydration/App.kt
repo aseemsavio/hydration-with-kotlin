@@ -1,5 +1,9 @@
 package com.aseemsavio.hydration
 
+import kotlinx.coroutines.runBlocking
+
 fun main() {
-    println("Jesus Never Fails!")
+    runBlocking {
+        println("Hello")
+    }
 }
