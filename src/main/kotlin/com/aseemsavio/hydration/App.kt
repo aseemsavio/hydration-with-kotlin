@@ -1,9 +1,14 @@
 package com.aseemsavio.hydration
 
+import com.aseemsavio.hydration.app.PostServiceClient
 import kotlinx.coroutines.runBlocking
 
 fun main() {
     runBlocking {
-        println("Hello")
+        val postService = PostServiceClient()
+
+        for (post in postService.posts()) {
+            
+        }
     }
 }
